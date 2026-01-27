@@ -1,0 +1,27 @@
+/* Hide dialog unless it has the open attribute (helps fallback behavior) */
+dialog:not([open]) {
+  display: none;
+}
+
+/* Basic styling for the dialog */
+#party-dialog {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px;
+  margin: auto; /* Centers the dialog */
+}
+
+/* Styling the backdrop that appears when using showModal() */
+dialog#party-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background effect */
+}
+
+/* Optional: style the close button */
+#close-dialog-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

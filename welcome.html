@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
     <title>Welcome to Party Journal</title>
 </head>
 <body>
     <h1>Welcome to my Party Scrapbook</h1>
     <p>This is where I'll keep all my party memories</p>
+<!-- Button to open dialog -->
+
+    <!-- Button to open dialog -->
+    <button id="open-dialog-button">Open Pop-up</button>
+
+    <!-- The Dialog Element -->
+    <dialog id="party-dialog">
+        <h2>You just got a super cool party invite!</h2>
+        <p> Welcome to my Scrapbook where YOU can see all my super cool party memories!</p>
+        <button id="close-dialog-button">Close</button>
+    </dialog>
+
+    <!-- Load script after DOM so element references exist -->
+    <script src="ps.js"></script>
+
 </body>
 </html>
