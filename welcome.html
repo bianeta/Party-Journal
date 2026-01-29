@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Poppins for headings, Indie Flower for body text -->
+   
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-brands-400.woff2">
+   <body style="background-image: url('images/gp.png') ;"></body>
 
-    <title>Welcome to Party Journal</title>
+<style>
+    .container{ 
+        position: relative;
+        width:500px;
+        height:300px;
+        margin:20px auto;
+        border: 2px solid #333;
+        background-color: #f0f8;
+
+    }
+    .background-block{
+        position:absolute;
+        top: 30px;
+        left:50px;
+        width:200px;
+        height: 100px;
+        background: color #ff76d1;
+        z-index:1;/*behind the text block*/
+        opacity:0.7; 
+
+    }
+
+    .text-overlay{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+           
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8)
+    }
+</style>
+    <title>Welcome to Party Scrapbook</title>
 </head>
 <body>
+    <div class="container">
+        
+        <div class="background-block"></div>
+        <div class="text-overlay"></div>
+ 
     <h1>Welcome to my Party Scrapbook</h1>
     <p>This is where I'll keep all my party memories</p>
 <!-- Button to open dialog -->
