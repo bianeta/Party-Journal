@@ -6,8 +6,7 @@
    <link rel="stylesheet" href="style.css">
    
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-brands-400.woff2">
-   <body style="background-image: url('images/gp.png') ;"></body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 <style>
     .container{ 
@@ -16,17 +15,9 @@
         height:300px;
         margin:20px auto;
         border: 2px solid #333;
-        background-color: #f0f8;
-
-    }
-    .background-block{
-        position:absolute;
-        top: 30px;
-        left:50px;
-        width:200px;
-        height: 100px;
-        background: color #ff76d1;
-        z-index:1;/*behind the text block*/
+        /* valid pale background */
+        background-color: #ff76d1;
+         z-index:1;/*behind the text block*/
         opacity:0.7; 
 
     }
@@ -46,12 +37,14 @@
             text-align: center;
             padding: 20px;
            
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8)
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            /* Allow underlying elements (like buttons) to receive clicks */
+            pointer-events: none;
     }
 </style>
     <title>Welcome to Party Scrapbook</title>
 </head>
-<body>
+<body style="background-image: url('images/gp.png');">
     <div class="container">
         
         <div class="background-block"></div>
@@ -59,19 +52,19 @@
  
     <h1>Welcome to my Party Scrapbook</h1>
     <p>This is where I'll keep all my party memories</p>
-<!-- Button to open dialog -->
 
-    <!-- Button to open dialog -->
-    <button id="open-dialog-button">Open Pop-up</button>
+<button id="open-dialog-btn">Click to learn more!</button>
 
-    <!-- The Dialog Element -->
-    <dialog id="party-dialog">
-        <h2>You just got a super cool party invite!</h2>
-        <p> Welcome to my Scrapbook where YOU can see all my super cool party memories!</p>
-        <button id="close-dialog-button">Close</button>
-    </dialog>
+<dialog id="my-dialog">
+  <h2>About this site</h2>
+  <p>This is where I can keep all my party memories. From my Birthday party, like an onlinejournal!!</p>
+  <form method="dialog">
+    <button id="close-dialog-btn">Close</button>
+  </form>
+</dialog>
+    
 
-    <!-- Load script after DOM so element references exist -->
+    </div>
     <script src="ps.js"></script>
 
 </body>
