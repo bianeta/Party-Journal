@@ -12,3 +12,16 @@ openButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
   dialog.close();
 });
+
+function moveSlide(direction) {
+  const slideContainer = document.getElementById('carouselSlide');
+  
+  // Find out exactly how wide one image is
+  const slideWidth = slideContainer.clientWidth;
+  
+  // Scroll left or right by exactly one image width
+  slideContainer.scrollBy({
+    left: slideWidth * direction,
+    behavior: 'smooth'
+  });
+}

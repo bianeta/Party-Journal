@@ -57,7 +57,7 @@
 <dialog id="my-dialog">
   <h2>About this site</h2>
   <p>This site lets you learn all the lyrics to your favorite songs! and information about them.( Hint:click the headphones)</p>
-  <a href="about.html" class="my-button">🎧</a>
+  <a href="about.html" class="my-button">CLICK ME TO SEE LYRICS!!</a>
   <form method="dialog">
     <button id="close-dialog-btn">Close</button>
   </form>
@@ -66,6 +66,22 @@
 
     </div>
     <script src="ps.js"></script>
+
+    <div class="carousel-wrapper">
+  <!-- Clickable Buttons -->
+  <button class="nav-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="nav-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+
+  <--Carousel Container-->
+  <div class="carousel-container">
+    <div class="carousel-slide" id="carouselSlide">
+      <img src="https://picsum.photos" alt="Slide 1">
+      <img src="https://picsum.photos" alt="Slide 2">
+      <img src="https://picsum.photos" alt="Slide 3">
+      <img src="https://picsum.photos" alt="Slide 4">
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
