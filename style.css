@@ -101,3 +101,26 @@ button {
 .next-btn {
   right: 10px;
 }
+
+/* 1. Make sure your layout parent is configured as the tracking anchor */
+.header-cluster-container {
+  position: relative; 
+  width: 100%;
+  max-width: 500px;    /* Change to match the exact size of your pink box */
+  margin: 80px auto;   /* Centers the anchor, leaves space for overflowing items */
+}
+
+/* 2. Strip standard framing boxes out so transparent PNG stickers render correctly */
+.header-deco {
+  position: absolute;  /* Forces absolute compliance */
+  background: transparent !important; 
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* 3. Force your images to respect the absolute box dimensions */
+.header-deco img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
