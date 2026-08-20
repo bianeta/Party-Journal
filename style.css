@@ -18,6 +18,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+pre {
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre-wrap; /* Keeps line breaks AND wraps text if the screen is too narrow */
+}
+
+
 /* Keep buttons consistent with the page (use Indie Flower for body-like elements) */
 button {
   font-family: 'Indie Flower', cursive, sans-serif;
